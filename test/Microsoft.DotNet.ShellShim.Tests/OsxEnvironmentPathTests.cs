@@ -70,7 +70,7 @@ namespace Microsoft.DotNet.ShellShim.Tests
 
         [NonWindowsOnlyTheory]
         [InlineData("/home/user/.dotnet/tools")]
-        [InlineData("~/.dotnet/tools")]
+        [InlineData("$HOME/.dotnet/tools")]
         public void GivenPathSetItPrintsNothing(string toolsDirectoryOnPath)
         {
             var reporter = new BufferedReporter();
